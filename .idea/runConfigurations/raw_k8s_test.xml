@@ -1,0 +1,6 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="raw-k8s/test" type="PowerShellRunType" factoryName="PowerShell" scriptUrl="C:\Users\AttilaCsipak\Documents\GitHub\cubix-cloudnativev2-block5-optional\raw-kubernetes\windows\2-test.ps1" executablePath="$PROJECT_DIR$/../../../../../WINDOWS/System32/WindowsPowerShell/v1.0/powershell.exe">
+    <envs />
+    <method v="2" />
+  </configuration>
+</component>
