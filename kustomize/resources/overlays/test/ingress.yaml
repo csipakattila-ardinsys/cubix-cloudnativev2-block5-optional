@@ -9,7 +9,7 @@ spec:
   - host: other.cubix.localhost
     http:
       paths:
-      - path: /frontend/
+      - path: /frontend
         pathType: Prefix
         backend:
           service:
