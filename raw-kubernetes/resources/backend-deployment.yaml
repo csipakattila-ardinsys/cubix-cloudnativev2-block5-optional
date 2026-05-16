@@ -3,9 +3,20 @@ kind: Deployment
 metadata:
   name: backend
   namespace: op5-kube-backend
+  labels:
+    block5: optional
+    app: backend
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      block5: optional
+      app: backend
   template:
+    metadata:
+      labels:
+        block5: optional
+        app: backend
     spec:
       containers:
       - name: backend

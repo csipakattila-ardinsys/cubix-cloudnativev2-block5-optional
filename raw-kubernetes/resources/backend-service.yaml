@@ -3,7 +3,13 @@ kind: Service
 metadata:
   name: backend
   namespace: op5-kube-backend
+  labels:
+    block5: optional
+    app: backend
 spec:
+  selector:
+    block5: optional
+    app: backend
   ports:
     - name: web
       port: 8080

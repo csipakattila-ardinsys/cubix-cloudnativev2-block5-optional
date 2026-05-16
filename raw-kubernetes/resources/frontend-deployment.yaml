@@ -3,16 +3,27 @@ kind: Deployment
 metadata:
   name: frontend
   namespace: op5-kube-frontend
+  labels:
+    block5: optional
+    app: frontend
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      block5: optional
+      app: frontend
   template:
+    metadata:
+      labels:
+        block5: optional
+        app: frontend
     spec:
       containers:
       - name: frontend
         image: quay.io/drsylent/cubix/block5v2/optional-frontend:springboot3
         env:
         - name: BACKEND_URL
-          value: http://backend:8080
+          value: http://backend.op5-kube-backend:8080
         ports:
         - containerPort: 8080
           name: web

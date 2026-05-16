@@ -3,7 +3,13 @@ kind: Service
 metadata:
   name: frontend
   namespace: op5-kube-frontend
+  labels:
+    block5: optional
+    app: frontend
 spec:
+  selector:
+    block5: optional
+    app: frontend
   ports:
     - name: web
       port: 8080
