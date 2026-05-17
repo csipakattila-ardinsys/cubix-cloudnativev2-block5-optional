@@ -40,8 +40,7 @@ spec:
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
           env:
-          - name: APP_DEFAULT_MESSAGE
-            value: {{ .Values.app.default.message | quote }}
+            {{- toYaml .Values.env | nindent 12 }}
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
