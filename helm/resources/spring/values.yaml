@@ -84,7 +84,3 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
-
-app:
-  default:
-    message: "frontapp default message"
