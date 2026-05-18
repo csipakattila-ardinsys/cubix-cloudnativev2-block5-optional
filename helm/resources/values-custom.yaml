@@ -1,0 +1,5 @@
+env:
+  - name: FRONTEND_DEFAULT_MESSAGE
+    value: "twice overwritten value"
+  - name: FOO
+    value: bar
